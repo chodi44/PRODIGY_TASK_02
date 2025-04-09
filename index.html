@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flip Stopwatch with Lap</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Stopwatch Title -->
+  <h1>Flip Stopwatch</h1>
+
+  <!-- Flip Timer -->
+  <div class="countdown">
+    <!-- Hours -->
+    <div id="hours" class="time-section">
+      <div class="label">Hours</div>
+      <div class="time-group">
+        <div class="time-segment">
+          <div class="segment-display">
+            <div class="segment-display__top">0</div>
+            <div class="segment-display__bottom">0</div>
+            <div class="segment-overlay">
+              <div class="segment-overlay__top">0</div>
+              <div class="segment-overlay__bottom">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="time-segment">
+          <div class="segment-display">
+            <div class="segment-display__top">0</div>
+            <div class="segment-display__bottom">0</div>
+            <div class="segment-overlay">
+              <div class="segment-overlay__top">0</div>
+              <div class="segment-overlay__bottom">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Minutes -->
+    <div id="minutes" class="time-section">
+      <div class="label">Minutes</div>
+      <div class="time-group">
+        <div class="time-segment">
+          <div class="segment-display">
+            <div class="segment-display__top">0</div>
+            <div class="segment-display__bottom">0</div>
+            <div class="segment-overlay">
+              <div class="segment-overlay__top">0</div>
+              <div class="segment-overlay__bottom">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="time-segment">
+          <div class="segment-display">
+            <div class="segment-display__top">0</div>
+            <div class="segment-display__bottom">0</div>
+            <div class="segment-overlay">
+              <div class="segment-overlay__top">0</div>
+              <div class="segment-overlay__bottom">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seconds -->
+    <div id="seconds" class="time-section">
+      <div class="label">Seconds</div>
+      <div class="time-group">
+        <div class="time-segment">
+          <div class="segment-display">
+            <div class="segment-display__top">0</div>
+            <div class="segment-display__bottom">0</div>
+            <div class="segment-overlay">
+              <div class="segment-overlay__top">0</div>
+              <div class="segment-overlay__bottom">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="time-segment">
+          <div class="segment-display">
+            <div class="segment-display__top">0</div>
+            <div class="segment-display__bottom">0</div>
+            <div class="segment-overlay">
+              <div class="segment-overlay__top">0</div>
+              <div class="segment-overlay__bottom">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milliseconds -->
+    <div id="milliseconds" class="time-section">
+      <div class="label">Milliseconds</div>
+      <div class="time-group">
+        <div class="time-segment">
+          <div class="segment-display">
+            <div class="segment-display__top">0</div>
+            <div class="segment-display__bottom">0</div>
+            <div class="segment-overlay">
+              <div class="segment-overlay__top">0</div>
+              <div class="segment-overlay__bottom">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="time-segment">
+          <div class="segment-display">
+            <div class="segment-display__top">0</div>
+            <div class="segment-display__bottom">0</div>
+            <div class="segment-overlay">
+              <div class="segment-overlay__top">0</div>
+              <div class="segment-overlay__bottom">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="time-segment">
+          <div class="segment-display">
+            <div class="segment-display__top">0</div>
+            <div class="segment-display__bottom">0</div>
+            <div class="segment-overlay">
+              <div class="segment-overlay__top">0</div>
+              <div class="segment-overlay__bottom">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="controls">
+    <button onclick="startStopwatch()">Start</button>
+    <button onclick="pauseStopwatch()">Pause</button>
+    <button onclick="resetStopwatch()">Reset</button>
+    <button onclick="lapStopwatch()">Lap</button>
+  </div>
+
+  <!-- Lap Times -->
+  <div class="laps" id="lapTimes"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
